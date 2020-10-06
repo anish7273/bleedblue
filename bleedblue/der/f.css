@@ -1,0 +1,266 @@
+
+::-webkit-scrollbar{
+	width:12px}
+::-webkit-scrollbar-track{
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.8);
+	border-radius:10px;}
+::-webkit-scrollbar-thumb{
+	border-radius:10px;
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,1);}
+
+
+.window{
+	margin:4px ;
+	padding:40px;
+	border: 1px solid black;
+	border-radius:5px;
+	width:auto;
+	height:70vh;
+	overflow-y:auto;
+	text-align :justify;
+	background:rgba(0,0,0,0.1);
+}
+
+
+
+  
+#pre p{
+  display: block;
+  font-size:4em;
+  font-weight:bold;
+  position:fixed;
+  top:40%;
+  left:33%;
+  overflow: hidden;
+  border:2px solid #326ac4;
+  padding:20px;
+  border-radius:100px;
+  box-shadow:0 100px 200px 0 #326ac4;
+}
+#post{
+  display:none;
+}
+
+#navbar a{
+  color:black;
+  font-weight: bold;
+  margin-right:40px;
+}
+#navbar{
+  margin-bottom: 40px;
+}
+.one{
+  background-image: url(war.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 250px;
+  margin-bottom: 60px;
+}
+.on{
+ background-image: url(back.jpeg) !important;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ padding-bottom:150px;
+ margin-bottom: 60px;
+}
+.up{
+ background-image:url(warb.jpeg) !important;
+ background-position:right !important;
+}
+#ones{
+  background-image: url(chopper.jpg);
+  background-size:cover;
+  background-position: center;
+  border-radius:5px;
+}
+#ones p{
+    padding-top:200px;
+    padding-bottom:180px;
+    padding-left:10%;
+    color:white;
+    font-size:3em;
+    text-shadow:1px 1px black;
+}
+#twos{
+  background-image: url(chop.jpeg);
+  background-size:cover;
+  background-position: center;
+  margin-bottom: 50px;
+}
+#twos p{
+    padding-top:200px;
+    padding-bottom:180px;
+    padding-left:10%;
+    color:white;
+    font-size:3em;
+    text-shadow:1px 1px black;
+}
+.one p{
+  padding-top:100px;
+  padding-left: 20%;
+  color:white;
+  font-size: 5em;
+  text-shadow:1px 1px black ;
+}
+.one ol{
+  background:inherit;
+  font-size:2em;
+  text-shadow:1px 1px white;
+}
+.blogs{
+  margin:50px 10px;
+}
+#two{
+  margin-bottom:65px;
+}
+#three p{
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom:40px;
+}
+.car{
+  background-color: #c0c0c0;
+  font-family:georgia;
+  padding-top:50px;
+  padding-bottom:50px;
+  border:1 px solid floralwhite;
+  border-radius:5px;
+}
+#add{
+	margin-top:10px;
+	border:1px solid black;
+	border-radius:5px;
+	background:white;
+}
+
+.carousel .carousel-indicators li {
+   width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color:black;
+}
+
+#prose{
+  text-align:center;
+}
+
+#author{
+  float:right;
+}
+
+#add_icons a{
+  display:block;
+  color:white;
+}
+
+#last_col a{
+  display: block;
+  color:white;
+  margin-bottom: 0;
+}
+
+#bott_bar{
+  background-color: black;
+  color:white;
+}
+#bott_bar span a{
+color:violet !important;
+}
+#pp{
+  color:#c0c0c0;
+}
+#privacy{
+  background-color: rgba(0,0,0,0.5);
+  color:#000;
+}
+.nav-tabs li a{
+  color:#c0c0c0;
+  margin-bottom:40px;
+}
+.nav-tabs ul{
+  display:inline;
+}
+.feed{
+  text-shadow:1px 1px black;
+}
+#footer{
+  display:block;
+  margin-top:auto;
+  position: relative;
+  bottom:0;
+  color:white;
+  background-color: #272727;
+}
+#footer hr{
+  border-bottom: 1px solid #000;
+  margin-bottom: 0;
+}
+#footer p{
+  font-size: 0.8em;
+}
+#footer span a{
+  color:#c0c0c0;
+}
+.breadcrumb li:last-child{
+color:white;
+text-shadow:1px 2px green;
+}
+#maintain{
+  background-color: rgba(0,0,0,0.5);
+  color:#000;
+}
+#addka{
+  background-color: rgba(0,0,0,0.5);
+  color:#000;
+}
+
+@media(min-width: 577px){
+  .small{
+    display: none;
+  }
+#ones{	
+	height:95vh;}
+}
+
+@media(max-width: 577px){
+  #pre p{
+    font-size:2em;
+    left:20%;
+  }
+  .big{
+    display: none;
+  }
+  .small a img{
+     margin-top:40px;
+     float:right;
+  }
+  .one p{
+    padding-left: 0;
+    font-size:3em;
+  }
+  #navbar{
+    margin-top: 25px;
+    padding-top:10%;
+    border-top:2px solid black;
+    padding-bottom:50%;
+    font-size:2em;
+  }
+  #navbar a{
+    font-weight:200 !important;
+  }
+  #maintain{
+    padding-top: 50%;
+  }
+  #ones{
+    margin-bottom:40px;
+  }
+  .carousel-inner{
+    margin-left:-10px; !important;
+    margin-right:-10px !important;
+  }
+.car{
+  padding-top:0px;
+  }
+}

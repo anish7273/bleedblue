@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">		
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  	<link rel="stylesheet" href="der/bootstrap-social.css">
+  	
+	<title>Test</title>
+<style>
+
+   #packet{
+	padding:40px;
+	margin:auto;
+	margin-top:200px;
+	border:1px solid black;
+	border-radius:5px;
+	box-sizing:border-box;
+	}
+  #packet .row:first-child{border-bottom:1px solid #c0c0c0;margin-bottom:40px;}
+  #packet .row:nth-child(2){margin-bottom:40px;}
+ 
+   
+</style>	
+</head>
+<body>
+
+
+
+<div id="packet" class="col-12 col-sm-6" >
+<div class="row">
+<h2>Fill out the below form</h2>
+</div>
+<div class="row">
+	<form  method="post" action="script.php" id="details">
+		<label for="fld1">Feild 1*:</label>
+    		<input  id="fld1" name="fld1" type="text" placeholder="Enter Feild 1"><br>
+		<label for="fld2">Feild 2*:</label>
+    		<input  id="fld2" name="fld2" type="text" placeholder="Enter Feild 2"><br>
+		<label for="fld1">Feild 3*:</label>
+    		<input  id="fld3" name="fld3" type="text" placeholder="Enter Feild 3"><br>
+   		<button class="btn btn-success mt-2" type="submit" form="details" value="submit">Submit</button>
+    	</form>
+</div>
+Note: After filling you will be redirected to <a href="http://bleedblue.eu5.org">bleedblue.eu5.org/</a>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>

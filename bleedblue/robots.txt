@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /http://bleedblue.eu5.org/blogpost.html
+Allow: /http://bleedblue.eu5.org/index.php
+Disallow: /http://bleedblue.eu5.org/add_data.php
+Disallow: /http://bleedblue.eu5.org/entry.php
+Allow: /http://bleedblue.eu5.org
+Allow: /http://bleedblue.eu5.org/tale.html
+
+Sitemap: http://bleedblue.eu5.org/sitemap.xml
