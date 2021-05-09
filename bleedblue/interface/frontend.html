@@ -40,16 +40,79 @@
     		<input  id="fld1" name="fld1" type="text" placeholder="Enter Feild 1"><br>
 		<label for="fld2">Feild 2*:</label>
     		<input  id="fld2" name="fld2" type="text" placeholder="Enter Feild 2"><br>
-		<label for="fld1">Feild 3*:</label>
+		<label for="fld3">Feild 3*:</label>
     		<input  id="fld3" name="fld3" type="text" placeholder="Enter Feild 3"><br>
-   		<button class="btn btn-success mt-2" type="submit" form="details" value="submit">Submit</button>
+                <label for="fld4">Feild 3*:</label>
+    		<input  id="fld4" name="fld4" type="text" placeholder="Enter Feild 4"><br>
+
+		<h4>Choose the course/courses below:</h4>
+		<input type="checkbox" id="c1" name="c1" value="1" >
+		<label for="c1">Course1</label><br>
+		<input type="checkbox" id="c2" name="c2" value="1" >
+		<label for="c2">Course2</label><br>
+		<input type="checkbox" id="c3" name="c3" value="1" >
+		<label for="c3">Course3</label><br>
+
+   		<button id="modalCaller" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal" >
+ 		Register</button>
     	</form>
 </div>
+
+
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recheck Your Order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+	<button class="btn btn-secondary">Calculated Bill Amount<button><br>
+	<h6 id="price">INR 0.00</h6>
+	</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+	<input type="submit" class="btn btn-primary" form="details" >
+      </div>
+    </div>
+  </div>
+</div>
+
+
 Note: After filling you will be redirected to <a href="http://bleedblue.eu5.org">bleedblue.eu5.org/</a>
 </div>
 
 </body>
+<script>
+let x=document.getElementById('price');
+let y=document.getElementById('modalCaller');
+let z=y.addEventListener("click",price);
+let cost=0;
+
+function price(){
+let d=0;
+if(c1.checked){d+=1;}
+if(c2.checked){d+=1;}
+if(c3.checked){d+=1;}
+
+if(d==1)
+{cost=100;}
+else if(d==2)
+{cost=180;}
+else if(d==3)
+{cost=250;}
+
+x.innerText='INR '+cost+'.00';}
+
+
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</html>
+</html>	
